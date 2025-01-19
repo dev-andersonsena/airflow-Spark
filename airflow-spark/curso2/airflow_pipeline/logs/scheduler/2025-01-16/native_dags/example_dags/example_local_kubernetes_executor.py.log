@@ -1,0 +1,539 @@
+[2025-01-15 23:12:42,896] {processor.py:153} INFO - Started process (PID=25459) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:12:42,897] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:12:42,898] {logging_mixin.py:115} INFO - [2025-01-15 23:12:42,898] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:12:43,038] {logging_mixin.py:115} INFO - [2025-01-15 23:12:43,033] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:12:43,039] {logging_mixin.py:115} INFO - [2025-01-15 23:12:43,039] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:12:43,039] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:12:43,067] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.174 seconds
+[2025-01-15 23:13:30,130] {processor.py:153} INFO - Started process (PID=25659) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:13:30,131] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:13:30,132] {logging_mixin.py:115} INFO - [2025-01-15 23:13:30,132] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:13:30,303] {logging_mixin.py:115} INFO - [2025-01-15 23:13:30,298] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:13:30,304] {logging_mixin.py:115} INFO - [2025-01-15 23:13:30,304] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:13:30,304] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:13:30,332] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.206 seconds
+[2025-01-15 23:14:18,648] {processor.py:153} INFO - Started process (PID=25834) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:14:18,650] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:14:18,651] {logging_mixin.py:115} INFO - [2025-01-15 23:14:18,651] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:14:18,802] {logging_mixin.py:115} INFO - [2025-01-15 23:14:18,797] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:14:18,802] {logging_mixin.py:115} INFO - [2025-01-15 23:14:18,802] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:14:18,803] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:14:18,835] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.190 seconds
+[2025-01-15 23:15:01,484] {processor.py:153} INFO - Started process (PID=25995) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:15:01,485] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:15:01,486] {logging_mixin.py:115} INFO - [2025-01-15 23:15:01,486] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:15:01,650] {logging_mixin.py:115} INFO - [2025-01-15 23:15:01,644] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:15:01,650] {logging_mixin.py:115} INFO - [2025-01-15 23:15:01,650] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:15:01,651] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:15:01,682] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.203 seconds
+[2025-01-15 23:15:49,666] {processor.py:153} INFO - Started process (PID=26163) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:15:49,667] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:15:49,668] {logging_mixin.py:115} INFO - [2025-01-15 23:15:49,668] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:15:49,840] {logging_mixin.py:115} INFO - [2025-01-15 23:15:49,834] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:15:49,840] {logging_mixin.py:115} INFO - [2025-01-15 23:15:49,840] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:15:49,840] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:15:49,874] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.212 seconds
+[2025-01-15 23:16:40,200] {processor.py:153} INFO - Started process (PID=26346) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:16:40,201] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:16:40,202] {logging_mixin.py:115} INFO - [2025-01-15 23:16:40,202] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:16:40,361] {logging_mixin.py:115} INFO - [2025-01-15 23:16:40,356] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:16:40,362] {logging_mixin.py:115} INFO - [2025-01-15 23:16:40,362] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:16:40,362] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:16:40,391] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.194 seconds
+[2025-01-15 23:17:27,663] {processor.py:153} INFO - Started process (PID=26568) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:17:27,664] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:17:27,665] {logging_mixin.py:115} INFO - [2025-01-15 23:17:27,665] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:17:27,832] {logging_mixin.py:115} INFO - [2025-01-15 23:17:27,826] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:17:27,832] {logging_mixin.py:115} INFO - [2025-01-15 23:17:27,832] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:17:27,833] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:17:27,862] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.203 seconds
+[2025-01-15 23:18:10,561] {processor.py:153} INFO - Started process (PID=26729) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:18:10,562] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:18:10,563] {logging_mixin.py:115} INFO - [2025-01-15 23:18:10,563] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:18:10,688] {logging_mixin.py:115} INFO - [2025-01-15 23:18:10,684] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:18:10,689] {logging_mixin.py:115} INFO - [2025-01-15 23:18:10,689] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:18:10,689] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:18:10,716] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.160 seconds
+[2025-01-15 23:18:53,453] {processor.py:153} INFO - Started process (PID=26885) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:18:53,454] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:18:53,455] {logging_mixin.py:115} INFO - [2025-01-15 23:18:53,455] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:18:53,626] {logging_mixin.py:115} INFO - [2025-01-15 23:18:53,620] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:18:53,626] {logging_mixin.py:115} INFO - [2025-01-15 23:18:53,626] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:18:53,627] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:18:53,658] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.209 seconds
+[2025-01-15 23:19:37,639] {processor.py:153} INFO - Started process (PID=27045) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:19:37,641] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:19:37,643] {logging_mixin.py:115} INFO - [2025-01-15 23:19:37,643] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:19:37,802] {logging_mixin.py:115} INFO - [2025-01-15 23:19:37,794] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:19:37,803] {logging_mixin.py:115} INFO - [2025-01-15 23:19:37,803] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:19:37,804] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:19:37,834] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.205 seconds
+[2025-01-15 23:20:30,317] {processor.py:153} INFO - Started process (PID=27447) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:20:30,318] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:20:30,319] {logging_mixin.py:115} INFO - [2025-01-15 23:20:30,319] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:20:30,495] {logging_mixin.py:115} INFO - [2025-01-15 23:20:30,490] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:20:30,496] {logging_mixin.py:115} INFO - [2025-01-15 23:20:30,496] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:20:30,496] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:20:30,530] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.217 seconds
+[2025-01-15 23:21:22,066] {processor.py:153} INFO - Started process (PID=27889) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:21:22,067] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:21:22,068] {logging_mixin.py:115} INFO - [2025-01-15 23:21:22,068] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:21:22,307] {logging_mixin.py:115} INFO - [2025-01-15 23:21:22,296] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:21:22,308] {logging_mixin.py:115} INFO - [2025-01-15 23:21:22,308] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:21:22,309] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:21:22,345] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.283 seconds
+[2025-01-15 23:22:20,847] {processor.py:153} INFO - Started process (PID=28306) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:22:20,848] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:22:20,849] {logging_mixin.py:115} INFO - [2025-01-15 23:22:20,849] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:22:21,054] {logging_mixin.py:115} INFO - [2025-01-15 23:22:21,047] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:22:21,055] {logging_mixin.py:115} INFO - [2025-01-15 23:22:21,054] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:22:21,055] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:22:21,127] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.284 seconds
+[2025-01-15 23:23:15,288] {processor.py:153} INFO - Started process (PID=28610) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:23:15,289] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:23:15,290] {logging_mixin.py:115} INFO - [2025-01-15 23:23:15,290] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:23:15,601] {logging_mixin.py:115} INFO - [2025-01-15 23:23:15,590] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:23:15,601] {logging_mixin.py:115} INFO - [2025-01-15 23:23:15,601] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:23:15,602] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:23:15,638] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.354 seconds
+[2025-01-15 23:24:00,886] {processor.py:153} INFO - Started process (PID=28778) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:24:00,887] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:24:00,888] {logging_mixin.py:115} INFO - [2025-01-15 23:24:00,888] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:24:01,027] {logging_mixin.py:115} INFO - [2025-01-15 23:24:01,022] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:24:01,027] {logging_mixin.py:115} INFO - [2025-01-15 23:24:01,027] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:24:01,028] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:24:01,055] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.172 seconds
+[2025-01-15 23:24:47,357] {processor.py:153} INFO - Started process (PID=28947) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:24:47,358] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:24:47,359] {logging_mixin.py:115} INFO - [2025-01-15 23:24:47,359] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:24:47,535] {logging_mixin.py:115} INFO - [2025-01-15 23:24:47,529] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:24:47,535] {logging_mixin.py:115} INFO - [2025-01-15 23:24:47,535] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:24:47,536] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:24:47,566] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.213 seconds
+[2025-01-15 23:25:31,384] {processor.py:153} INFO - Started process (PID=29108) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:25:31,386] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:25:31,387] {logging_mixin.py:115} INFO - [2025-01-15 23:25:31,386] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:25:31,552] {logging_mixin.py:115} INFO - [2025-01-15 23:25:31,547] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:25:31,553] {logging_mixin.py:115} INFO - [2025-01-15 23:25:31,553] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:25:31,553] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:25:31,585] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.204 seconds
+[2025-01-15 23:26:13,500] {processor.py:153} INFO - Started process (PID=29262) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:26:13,502] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:26:13,503] {logging_mixin.py:115} INFO - [2025-01-15 23:26:13,502] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:26:13,687] {logging_mixin.py:115} INFO - [2025-01-15 23:26:13,665] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:26:13,688] {logging_mixin.py:115} INFO - [2025-01-15 23:26:13,688] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:26:13,688] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:26:13,722] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.226 seconds
+[2025-01-15 23:26:56,506] {processor.py:153} INFO - Started process (PID=29416) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:26:56,508] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:26:56,509] {logging_mixin.py:115} INFO - [2025-01-15 23:26:56,509] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:26:56,669] {logging_mixin.py:115} INFO - [2025-01-15 23:26:56,664] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:26:56,670] {logging_mixin.py:115} INFO - [2025-01-15 23:26:56,670] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:26:56,670] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:26:56,708] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.205 seconds
+[2025-01-15 23:27:48,755] {processor.py:153} INFO - Started process (PID=29649) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:27:48,757] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:27:48,759] {logging_mixin.py:115} INFO - [2025-01-15 23:27:48,759] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:27:48,962] {logging_mixin.py:115} INFO - [2025-01-15 23:27:48,954] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:27:48,963] {logging_mixin.py:115} INFO - [2025-01-15 23:27:48,963] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:27:48,963] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:27:48,997] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.249 seconds
+[2025-01-15 23:28:42,873] {processor.py:153} INFO - Started process (PID=29846) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:28:42,874] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:28:42,876] {logging_mixin.py:115} INFO - [2025-01-15 23:28:42,876] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:28:43,092] {logging_mixin.py:115} INFO - [2025-01-15 23:28:43,086] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:28:43,092] {logging_mixin.py:115} INFO - [2025-01-15 23:28:43,092] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:28:43,092] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:28:43,128] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.261 seconds
+[2025-01-15 23:29:30,756] {processor.py:153} INFO - Started process (PID=30015) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:29:30,757] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:29:30,758] {logging_mixin.py:115} INFO - [2025-01-15 23:29:30,758] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:29:30,945] {logging_mixin.py:115} INFO - [2025-01-15 23:29:30,939] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:29:30,945] {logging_mixin.py:115} INFO - [2025-01-15 23:29:30,945] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:29:30,945] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:29:30,978] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.227 seconds
+[2025-01-15 23:30:16,470] {processor.py:153} INFO - Started process (PID=30286) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:30:16,471] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:30:16,473] {logging_mixin.py:115} INFO - [2025-01-15 23:30:16,473] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:30:16,653] {logging_mixin.py:115} INFO - [2025-01-15 23:30:16,648] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:30:16,653] {logging_mixin.py:115} INFO - [2025-01-15 23:30:16,653] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:30:16,654] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:30:16,680] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.214 seconds
+[2025-01-15 23:32:52,041] {processor.py:153} INFO - Started process (PID=31971) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:32:52,042] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:32:52,043] {logging_mixin.py:115} INFO - [2025-01-15 23:32:52,043] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:32:52,328] {logging_mixin.py:115} INFO - [2025-01-15 23:32:52,322] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:32:52,328] {logging_mixin.py:115} INFO - [2025-01-15 23:32:52,328] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:32:52,329] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:32:52,354] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.317 seconds
+[2025-01-15 23:33:35,435] {processor.py:153} INFO - Started process (PID=32132) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:33:35,437] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:33:35,438] {logging_mixin.py:115} INFO - [2025-01-15 23:33:35,438] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:33:35,621] {logging_mixin.py:115} INFO - [2025-01-15 23:33:35,616] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:33:35,621] {logging_mixin.py:115} INFO - [2025-01-15 23:33:35,621] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:33:35,622] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:33:35,653] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.221 seconds
+[2025-01-15 23:34:22,669] {processor.py:153} INFO - Started process (PID=32300) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:34:22,671] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:34:22,672] {logging_mixin.py:115} INFO - [2025-01-15 23:34:22,671] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:34:22,846] {logging_mixin.py:115} INFO - [2025-01-15 23:34:22,841] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:34:22,847] {logging_mixin.py:115} INFO - [2025-01-15 23:34:22,847] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:34:22,847] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:34:22,878] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.212 seconds
+[2025-01-15 23:35:10,470] {processor.py:153} INFO - Started process (PID=32477) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:35:10,471] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:35:10,472] {logging_mixin.py:115} INFO - [2025-01-15 23:35:10,472] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:35:10,649] {logging_mixin.py:115} INFO - [2025-01-15 23:35:10,644] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:35:10,650] {logging_mixin.py:115} INFO - [2025-01-15 23:35:10,650] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:35:10,650] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:35:10,675] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.209 seconds
+[2025-01-15 23:36:00,907] {processor.py:153} INFO - Started process (PID=32652) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:36:00,908] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:36:00,911] {logging_mixin.py:115} INFO - [2025-01-15 23:36:00,910] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:36:01,120] {logging_mixin.py:115} INFO - [2025-01-15 23:36:01,115] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:36:01,120] {logging_mixin.py:115} INFO - [2025-01-15 23:36:01,120] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:36:01,121] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:36:01,153] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.253 seconds
+[2025-01-15 23:36:48,262] {processor.py:153} INFO - Started process (PID=32818) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:36:48,263] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:36:48,264] {logging_mixin.py:115} INFO - [2025-01-15 23:36:48,264] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:36:48,479] {logging_mixin.py:115} INFO - [2025-01-15 23:36:48,468] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:36:48,480] {logging_mixin.py:115} INFO - [2025-01-15 23:36:48,480] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:36:48,480] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:36:48,717] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.459 seconds
+[2025-01-15 23:37:47,355] {processor.py:153} INFO - Started process (PID=33081) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:37:47,357] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:37:47,358] {logging_mixin.py:115} INFO - [2025-01-15 23:37:47,358] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:37:47,585] {logging_mixin.py:115} INFO - [2025-01-15 23:37:47,580] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:37:47,586] {logging_mixin.py:115} INFO - [2025-01-15 23:37:47,586] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:37:47,586] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:37:47,625] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.273 seconds
+[2025-01-15 23:38:37,353] {processor.py:153} INFO - Started process (PID=33262) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:38:37,354] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:38:37,355] {logging_mixin.py:115} INFO - [2025-01-15 23:38:37,355] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:38:37,528] {logging_mixin.py:115} INFO - [2025-01-15 23:38:37,522] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:38:37,529] {logging_mixin.py:115} INFO - [2025-01-15 23:38:37,529] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:38:37,530] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:38:37,565] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.217 seconds
+[2025-01-15 23:39:23,209] {processor.py:153} INFO - Started process (PID=33424) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:39:23,210] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:39:23,212] {logging_mixin.py:115} INFO - [2025-01-15 23:39:23,211] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:39:23,386] {logging_mixin.py:115} INFO - [2025-01-15 23:39:23,379] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:39:23,387] {logging_mixin.py:115} INFO - [2025-01-15 23:39:23,387] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:39:23,387] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:39:23,423] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.220 seconds
+[2025-01-15 23:40:16,808] {processor.py:153} INFO - Started process (PID=33614) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:40:16,809] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:40:16,810] {logging_mixin.py:115} INFO - [2025-01-15 23:40:16,810] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:40:17,003] {logging_mixin.py:115} INFO - [2025-01-15 23:40:16,986] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:40:17,004] {logging_mixin.py:115} INFO - [2025-01-15 23:40:17,004] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:40:17,004] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:40:17,040] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.242 seconds
+[2025-01-15 23:41:08,874] {processor.py:153} INFO - Started process (PID=33803) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:41:08,876] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:41:08,877] {logging_mixin.py:115} INFO - [2025-01-15 23:41:08,876] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:41:09,077] {logging_mixin.py:115} INFO - [2025-01-15 23:41:09,072] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:41:09,078] {logging_mixin.py:115} INFO - [2025-01-15 23:41:09,078] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:41:09,078] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:41:09,112] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.241 seconds
+[2025-01-15 23:42:00,975] {processor.py:153} INFO - Started process (PID=33986) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:42:00,977] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:42:00,980] {logging_mixin.py:115} INFO - [2025-01-15 23:42:00,979] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:42:01,181] {logging_mixin.py:115} INFO - [2025-01-15 23:42:01,171] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:42:01,182] {logging_mixin.py:115} INFO - [2025-01-15 23:42:01,181] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:42:01,182] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:42:01,215] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.244 seconds
+[2025-01-15 23:42:48,250] {processor.py:153} INFO - Started process (PID=34209) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:42:48,252] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:42:48,253] {logging_mixin.py:115} INFO - [2025-01-15 23:42:48,253] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:42:48,394] {logging_mixin.py:115} INFO - [2025-01-15 23:42:48,390] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:42:48,395] {logging_mixin.py:115} INFO - [2025-01-15 23:42:48,395] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:42:48,395] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:42:48,422] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.175 seconds
+[2025-01-15 23:43:31,886] {processor.py:153} INFO - Started process (PID=34369) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:43:31,887] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:43:31,888] {logging_mixin.py:115} INFO - [2025-01-15 23:43:31,888] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:43:32,108] {logging_mixin.py:115} INFO - [2025-01-15 23:43:32,102] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:43:32,109] {logging_mixin.py:115} INFO - [2025-01-15 23:43:32,109] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:43:32,109] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:43:32,152] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.270 seconds
+[2025-01-15 23:44:25,325] {processor.py:153} INFO - Started process (PID=34559) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:44:25,326] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:44:25,328] {logging_mixin.py:115} INFO - [2025-01-15 23:44:25,327] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:44:25,534] {logging_mixin.py:115} INFO - [2025-01-15 23:44:25,528] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:44:25,534] {logging_mixin.py:115} INFO - [2025-01-15 23:44:25,534] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:44:25,535] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:44:25,568] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.247 seconds
+[2025-01-15 23:45:19,190] {processor.py:153} INFO - Started process (PID=34750) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:45:19,191] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:45:19,192] {logging_mixin.py:115} INFO - [2025-01-15 23:45:19,192] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:45:19,378] {logging_mixin.py:115} INFO - [2025-01-15 23:45:19,371] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:45:19,378] {logging_mixin.py:115} INFO - [2025-01-15 23:45:19,378] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:45:19,378] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:45:19,416] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.230 seconds
+[2025-01-15 23:46:05,010] {processor.py:153} INFO - Started process (PID=34917) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:46:05,011] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:46:05,012] {logging_mixin.py:115} INFO - [2025-01-15 23:46:05,012] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:46:05,190] {logging_mixin.py:115} INFO - [2025-01-15 23:46:05,185] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:46:05,191] {logging_mixin.py:115} INFO - [2025-01-15 23:46:05,190] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:46:05,191] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:46:05,222] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.216 seconds
+[2025-01-15 23:46:49,960] {processor.py:153} INFO - Started process (PID=35085) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:46:49,961] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:46:49,962] {logging_mixin.py:115} INFO - [2025-01-15 23:46:49,962] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:46:50,179] {logging_mixin.py:115} INFO - [2025-01-15 23:46:50,174] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:46:50,180] {logging_mixin.py:115} INFO - [2025-01-15 23:46:50,180] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:46:50,180] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:46:50,214] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.258 seconds
+[2025-01-15 23:47:39,216] {processor.py:153} INFO - Started process (PID=35262) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:47:39,218] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:47:39,219] {logging_mixin.py:115} INFO - [2025-01-15 23:47:39,218] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:47:39,395] {logging_mixin.py:115} INFO - [2025-01-15 23:47:39,389] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:47:39,395] {logging_mixin.py:115} INFO - [2025-01-15 23:47:39,395] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:47:39,396] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:47:39,425] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.212 seconds
+[2025-01-15 23:48:23,347] {processor.py:153} INFO - Started process (PID=35474) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:48:23,348] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:48:23,349] {logging_mixin.py:115} INFO - [2025-01-15 23:48:23,349] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:48:23,510] {logging_mixin.py:115} INFO - [2025-01-15 23:48:23,505] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:48:23,510] {logging_mixin.py:115} INFO - [2025-01-15 23:48:23,510] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:48:23,510] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:48:23,539] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.196 seconds
+[2025-01-15 23:49:11,194] {processor.py:153} INFO - Started process (PID=35644) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:49:11,196] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:49:11,197] {logging_mixin.py:115} INFO - [2025-01-15 23:49:11,196] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:49:11,366] {logging_mixin.py:115} INFO - [2025-01-15 23:49:11,361] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:49:11,366] {logging_mixin.py:115} INFO - [2025-01-15 23:49:11,366] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:49:11,367] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:49:11,397] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.207 seconds
+[2025-01-15 23:49:57,939] {processor.py:153} INFO - Started process (PID=35812) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:49:57,940] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:49:57,941] {logging_mixin.py:115} INFO - [2025-01-15 23:49:57,941] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:49:58,159] {logging_mixin.py:115} INFO - [2025-01-15 23:49:58,147] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:49:58,160] {logging_mixin.py:115} INFO - [2025-01-15 23:49:58,160] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:49:58,160] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:49:58,197] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.262 seconds
+[2025-01-15 23:50:44,406] {processor.py:153} INFO - Started process (PID=35980) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:50:44,407] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:50:44,409] {logging_mixin.py:115} INFO - [2025-01-15 23:50:44,408] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:50:44,602] {logging_mixin.py:115} INFO - [2025-01-15 23:50:44,594] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:50:44,603] {logging_mixin.py:115} INFO - [2025-01-15 23:50:44,603] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:50:44,605] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:50:44,641] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.239 seconds
+[2025-01-15 23:51:32,308] {processor.py:153} INFO - Started process (PID=36155) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:51:32,309] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:51:32,310] {logging_mixin.py:115} INFO - [2025-01-15 23:51:32,310] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:51:32,470] {logging_mixin.py:115} INFO - [2025-01-15 23:51:32,464] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:51:32,470] {logging_mixin.py:115} INFO - [2025-01-15 23:51:32,470] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:51:32,471] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:51:32,502] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.198 seconds
+[2025-01-15 23:52:27,710] {processor.py:153} INFO - Started process (PID=36350) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:52:27,713] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:52:27,715] {logging_mixin.py:115} INFO - [2025-01-15 23:52:27,714] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:52:27,935] {logging_mixin.py:115} INFO - [2025-01-15 23:52:27,929] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:52:27,936] {logging_mixin.py:115} INFO - [2025-01-15 23:52:27,936] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:52:27,936] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:52:27,971] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.266 seconds
+[2025-01-15 23:53:17,579] {processor.py:153} INFO - Started process (PID=36578) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:53:17,580] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py for tasks to queue
+[2025-01-15 23:53:17,582] {logging_mixin.py:115} INFO - [2025-01-15 23:53:17,581] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:53:17,767] {logging_mixin.py:115} INFO - [2025-01-15 23:53:17,757] {example_local_kubernetes_executor.py:37} WARNING - Could not import DAGs in example_local_kubernetes_executor.py
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py", line 35, in <module>
+    from kubernetes.client import models as k8s
+ModuleNotFoundError: No module named 'kubernetes'
+[2025-01-15 23:53:17,768] {logging_mixin.py:115} INFO - [2025-01-15 23:53:17,768] {example_local_kubernetes_executor.py:38} WARNING - Install Kubernetes dependencies with: pip install apache-airflow[cncf.kubernetes]
+[2025-01-15 23:53:17,768] {processor.py:653} WARNING - No viable dags retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py
+[2025-01-15 23:53:17,804] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientepython/lib/python3.9/site-packages/airflow/example_dags/example_local_kubernetes_executor.py took 0.229 seconds
