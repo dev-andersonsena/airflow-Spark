@@ -26,4 +26,12 @@ instalando o airflow
 
 --airflow standalone
 
+**** baixando o pacote do spark *** 
+wget https://archive.apache.org/dist/spark/spark-3.1.3/spark-3.1.3-bin-hadoop3.2.tgz
+descompactar = tar -xvzf spark-3.1.3-bin-hadoop3.2.tgz
 
+acessar a pasta bin = ./bin/spark-submit /home/aluno/Documents/curso2/src/spark/transformation.py
+
+pip install
+
+* pip install apache-airflow-providers-apache-spark
