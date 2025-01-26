@@ -33,3 +33,5 @@ with DAG(dag_id = "TwitterDAG", start_date=days_ago(6), schedule_interval="@dail
                                              "--dest", BASE_FOLDER.format(stage="Silver", partition=""),
                                              "--process-date", "{{ ds }}"])
 twitter_operator >> twitter_transform   
+
+########################################################################################################################
