@@ -1,0 +1,32 @@
+[2025-01-22 20:31:48,628] {processor.py:153} INFO - Started process (PID=9626) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:31:48,629] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-01-22 20:31:48,630] {logging_mixin.py:115} INFO - [2025-01-22 20:31:48,630] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:31:48,682] {processor.py:651} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:31:48,866] {logging_mixin.py:115} INFO - [2025-01-22 20:31:48,866] {manager.py:508} INFO - Created Permission View: can read on DAG:example_complex
+[2025-01-22 20:31:48,918] {logging_mixin.py:115} INFO - [2025-01-22 20:31:48,918] {manager.py:508} INFO - Created Permission View: can delete on DAG:example_complex
+[2025-01-22 20:31:48,959] {logging_mixin.py:115} INFO - [2025-01-22 20:31:48,959] {manager.py:508} INFO - Created Permission View: can edit on DAG:example_complex
+[2025-01-22 20:31:48,959] {logging_mixin.py:115} INFO - [2025-01-22 20:31:48,959] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-01-22 20:31:48,976] {logging_mixin.py:115} INFO - [2025-01-22 20:31:48,976] {dag.py:2398} INFO - Creating ORM DAG for example_complex
+[2025-01-22 20:31:48,989] {logging_mixin.py:115} INFO - [2025-01-22 20:31:48,989] {dag.py:2927} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-01-22 20:31:49,047] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.423 seconds
+[2025-01-22 20:32:37,862] {processor.py:153} INFO - Started process (PID=9799) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:32:37,864] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-01-22 20:32:37,865] {logging_mixin.py:115} INFO - [2025-01-22 20:32:37,865] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:32:37,944] {processor.py:651} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:32:38,008] {logging_mixin.py:115} INFO - [2025-01-22 20:32:38,008] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-01-22 20:32:38,041] {logging_mixin.py:115} INFO - [2025-01-22 20:32:38,041] {dag.py:2927} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-01-22 20:32:38,099] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.242 seconds
+[2025-01-22 20:33:22,742] {processor.py:153} INFO - Started process (PID=9960) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:33:22,744] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-01-22 20:33:22,745] {logging_mixin.py:115} INFO - [2025-01-22 20:33:22,745] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:33:22,800] {processor.py:651} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:33:22,847] {logging_mixin.py:115} INFO - [2025-01-22 20:33:22,847] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-01-22 20:33:22,883] {logging_mixin.py:115} INFO - [2025-01-22 20:33:22,883] {dag.py:2927} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-01-22 20:33:22,936] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.197 seconds
+[2025-01-22 20:35:35,236] {processor.py:153} INFO - Started process (PID=11215) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:35:35,237] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py for tasks to queue
+[2025-01-22 20:35:35,238] {logging_mixin.py:115} INFO - [2025-01-22 20:35:35,238] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:35:35,292] {processor.py:651} INFO - DAG(s) dict_keys(['example_complex']) retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py
+[2025-01-22 20:35:35,339] {logging_mixin.py:115} INFO - [2025-01-22 20:35:35,339] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-01-22 20:35:35,369] {logging_mixin.py:115} INFO - [2025-01-22 20:35:35,369] {dag.py:2927} INFO - Setting next_dagrun for example_complex to None, run_after=None
+[2025-01-22 20:35:35,426] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/example_dags/example_complex.py took 0.194 seconds

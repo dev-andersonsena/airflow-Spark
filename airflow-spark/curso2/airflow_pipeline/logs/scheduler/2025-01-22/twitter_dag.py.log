@@ -1,0 +1,32 @@
+[2025-01-22 20:32:03,398] {processor.py:153} INFO - Started process (PID=9676) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:32:03,399] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py for tasks to queue
+[2025-01-22 20:32:03,400] {logging_mixin.py:115} INFO - [2025-01-22 20:32:03,400] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:32:03,566] {processor.py:651} INFO - DAG(s) dict_keys(['TwitterDAG']) retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:32:03,752] {logging_mixin.py:115} INFO - [2025-01-22 20:32:03,752] {manager.py:508} INFO - Created Permission View: can read on DAG:TwitterDAG
+[2025-01-22 20:32:03,790] {logging_mixin.py:115} INFO - [2025-01-22 20:32:03,790] {manager.py:508} INFO - Created Permission View: can delete on DAG:TwitterDAG
+[2025-01-22 20:32:03,822] {logging_mixin.py:115} INFO - [2025-01-22 20:32:03,822] {manager.py:508} INFO - Created Permission View: can edit on DAG:TwitterDAG
+[2025-01-22 20:32:03,823] {logging_mixin.py:115} INFO - [2025-01-22 20:32:03,823] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-01-22 20:32:03,841] {logging_mixin.py:115} INFO - [2025-01-22 20:32:03,841] {dag.py:2398} INFO - Creating ORM DAG for TwitterDAG
+[2025-01-22 20:32:03,858] {logging_mixin.py:115} INFO - [2025-01-22 20:32:03,858] {dag.py:2927} INFO - Setting next_dagrun for TwitterDAG to 2025-01-16T00:00:00+00:00, run_after=2025-01-17T00:00:00+00:00
+[2025-01-22 20:32:03,908] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py took 0.515 seconds
+[2025-01-22 20:32:56,478] {processor.py:153} INFO - Started process (PID=9868) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:32:56,480] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py for tasks to queue
+[2025-01-22 20:32:56,481] {logging_mixin.py:115} INFO - [2025-01-22 20:32:56,481] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:32:56,631] {processor.py:651} INFO - DAG(s) dict_keys(['TwitterDAG']) retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:32:56,671] {logging_mixin.py:115} INFO - [2025-01-22 20:32:56,670] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-01-22 20:32:56,700] {logging_mixin.py:115} INFO - [2025-01-22 20:32:56,700] {dag.py:2927} INFO - Setting next_dagrun for TwitterDAG to 2025-01-16T00:00:00+00:00, run_after=2025-01-17T00:00:00+00:00
+[2025-01-22 20:32:56,747] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py took 0.272 seconds
+[2025-01-22 20:33:42,860] {processor.py:153} INFO - Started process (PID=10204) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:33:42,861] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py for tasks to queue
+[2025-01-22 20:33:42,862] {logging_mixin.py:115} INFO - [2025-01-22 20:33:42,862] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:33:42,975] {processor.py:651} INFO - DAG(s) dict_keys(['TwitterDAG']) retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:33:43,015] {logging_mixin.py:115} INFO - [2025-01-22 20:33:43,015] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-01-22 20:33:43,046] {logging_mixin.py:115} INFO - [2025-01-22 20:33:43,046] {dag.py:2927} INFO - Setting next_dagrun for TwitterDAG to 2025-01-16T00:00:00+00:00, run_after=2025-01-17T00:00:00+00:00
+[2025-01-22 20:33:43,245] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py took 0.388 seconds
+[2025-01-22 20:35:46,512] {processor.py:153} INFO - Started process (PID=11319) to work on /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:35:46,513] {processor.py:641} INFO - Processing file /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py for tasks to queue
+[2025-01-22 20:35:46,514] {logging_mixin.py:115} INFO - [2025-01-22 20:35:46,514] {dagbag.py:507} INFO - Filling up the DagBag from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:35:46,724] {processor.py:651} INFO - DAG(s) dict_keys(['TwitterDAG']) retrieved from /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py
+[2025-01-22 20:35:46,764] {logging_mixin.py:115} INFO - [2025-01-22 20:35:46,763] {dag.py:2379} INFO - Sync 1 DAGs
+[2025-01-22 20:35:46,805] {logging_mixin.py:115} INFO - [2025-01-22 20:35:46,805] {dag.py:2927} INFO - Setting next_dagrun for TwitterDAG to 2025-01-16T00:00:00+00:00, run_after=2025-01-17T00:00:00+00:00
+[2025-01-22 20:35:46,863] {processor.py:161} INFO - Processing /mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/dags/twitter_dag.py took 0.358 seconds

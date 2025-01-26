@@ -1,0 +1,616 @@
+[2025-01-24T21:40:04.192-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-24T21:40:04.224-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-24T21:40:04.240-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-24T21:40:04.241-0300] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-24T21:40:04.287-0300] {taskinstance.py:2889} INFO - Executing <Task(TwitterOperator): twitter_datascience> on 2025-01-20 00:00:00+00:00
+[2025-01-24T21:40:04.292-0300] {standard_task_runner.py:72} INFO - Started process 19044 to run task
+[2025-01-24T21:40:04.298-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'TwitterDAG', 'twitter_datascience', 'scheduled__2025-01-20T00:00:00+00:00', '--job-id', '4', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmp0c_dbu6o']
+[2025-01-24T21:40:04.300-0300] {standard_task_runner.py:105} INFO - Job 4: Subtask twitter_datascience
+[2025-01-24T21:40:04.411-0300] {task_command.py:467} INFO - Running <TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [running]> on host ANDERSON.
+[2025-01-24T21:40:04.572-0300] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TwitterDAG' AIRFLOW_CTX_TASK_ID='twitter_datascience' AIRFLOW_CTX_EXECUTION_DATE='2025-01-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-20T00:00:00+00:00'
+[2025-01-24T21:40:04.575-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-01-24T21:40:04.577-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-01-24T21:40:04.579-0300] {logging_mixin.py:190} INFO - Current task name:twitter_datascience state:running start_date:2025-01-25 00:40:04.225619+00:00
+[2025-01-24T21:40:04.580-0300] {logging_mixin.py:190} INFO - Dag name:TwitterDAG and current dag run status:running
+[2025-01-24T21:40:04.581-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-24T21:40:04.627-0300] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-24T21:40:04.680-0300] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-01-24T21:40:04.681-0300] {logging_mixin.py:190} INFO - Task start:2025-01-25 00:40:04.225619+00:00 end:2025-01-25 00:40:04.679576+00:00 duration:0.453957
+[2025-01-24T21:40:04.682-0300] {logging_mixin.py:190} INFO - Task:<Task(TwitterOperator): twitter_datascience> dag:<DAG: TwitterDAG> dagrun:<DagRun TwitterDAG @ 2025-01-20 00:00:00+00:00: scheduled__2025-01-20T00:00:00+00:00, state:running, queued_at: 2025-01-25 00:39:34.944073+00:00. externally triggered: False>
+[2025-01-24T21:40:04.682-0300] {logging_mixin.py:190} INFO - Failure caused by The conn_id `twitter_default` isn't defined
+[2025-01-24T21:40:04.683-0300] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=TwitterDAG, task_id=twitter_datascience, run_id=scheduled__2025-01-20T00:00:00+00:00, execution_date=20250120T000000, start_date=20250125T004004, end_date=20250125T004004
+[2025-01-24T21:40:04.723-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-24T21:40:04.724-0300] {standard_task_runner.py:124} ERROR - Failed to execute job 4 for task twitter_datascience (The conn_id `twitter_default` isn't defined; 19044)
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-24T21:40:04.791-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-01-24T21:40:04.830-0300] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-24T21:40:04.858-0300] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-01-24T22:03:00.845-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-24T22:03:00.871-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-24T22:03:00.888-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-24T22:03:00.889-0300] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-24T22:03:00.935-0300] {taskinstance.py:2889} INFO - Executing <Task(TwitterOperator): twitter_datascience> on 2025-01-20 00:00:00+00:00
+[2025-01-24T22:03:00.939-0300] {standard_task_runner.py:72} INFO - Started process 3716 to run task
+[2025-01-24T22:03:00.956-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'TwitterDAG', 'twitter_datascience', 'scheduled__2025-01-20T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmptl7gi2bf']
+[2025-01-24T22:03:00.961-0300] {standard_task_runner.py:105} INFO - Job 6: Subtask twitter_datascience
+[2025-01-24T22:03:01.107-0300] {task_command.py:467} INFO - Running <TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [running]> on host ANDERSON.
+[2025-01-24T22:03:01.276-0300] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TwitterDAG' AIRFLOW_CTX_TASK_ID='twitter_datascience' AIRFLOW_CTX_EXECUTION_DATE='2025-01-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-20T00:00:00+00:00'
+[2025-01-24T22:03:01.278-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-01-24T22:03:01.279-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-01-24T22:03:01.280-0300] {logging_mixin.py:190} INFO - Current task name:twitter_datascience state:running start_date:2025-01-25 01:03:00.872590+00:00
+[2025-01-24T22:03:01.281-0300] {logging_mixin.py:190} INFO - Dag name:TwitterDAG and current dag run status:running
+[2025-01-24T22:03:01.282-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-24T22:03:01.328-0300] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-24T22:03:01.371-0300] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-01-24T22:03:01.372-0300] {logging_mixin.py:190} INFO - Task start:2025-01-25 01:03:00.872590+00:00 end:2025-01-25 01:03:01.371188+00:00 duration:0.498598
+[2025-01-24T22:03:01.373-0300] {logging_mixin.py:190} INFO - Task:<Task(TwitterOperator): twitter_datascience> dag:<DAG: TwitterDAG> dagrun:<DagRun TwitterDAG @ 2025-01-20 00:00:00+00:00: scheduled__2025-01-20T00:00:00+00:00, state:running, queued_at: 2025-01-25 01:02:34.391992+00:00. externally triggered: False>
+[2025-01-24T22:03:01.374-0300] {logging_mixin.py:190} INFO - Failure caused by The conn_id `twitter_default` isn't defined
+[2025-01-24T22:03:01.374-0300] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=TwitterDAG, task_id=twitter_datascience, run_id=scheduled__2025-01-20T00:00:00+00:00, execution_date=20250120T000000, start_date=20250125T010300, end_date=20250125T010301
+[2025-01-24T22:03:01.409-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-24T22:03:01.410-0300] {standard_task_runner.py:124} ERROR - Failed to execute job 6 for task twitter_datascience (The conn_id `twitter_default` isn't defined; 3716)
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-24T22:03:01.486-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-01-24T22:03:01.521-0300] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-24T22:03:01.543-0300] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-01-25T00:11:22.458-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-25T00:11:22.489-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-25T00:11:22.506-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-25T00:11:22.507-0300] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-25T00:11:22.556-0300] {taskinstance.py:2889} INFO - Executing <Task(TwitterOperator): twitter_datascience> on 2025-01-20 00:00:00+00:00
+[2025-01-25T00:11:22.561-0300] {standard_task_runner.py:72} INFO - Started process 30047 to run task
+[2025-01-25T00:11:22.570-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'TwitterDAG', 'twitter_datascience', 'scheduled__2025-01-20T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmp7z0t25ll']
+[2025-01-25T00:11:22.572-0300] {standard_task_runner.py:105} INFO - Job 8: Subtask twitter_datascience
+[2025-01-25T00:11:22.704-0300] {task_command.py:467} INFO - Running <TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [running]> on host ANDERSON.
+[2025-01-25T00:11:22.864-0300] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TwitterDAG' AIRFLOW_CTX_TASK_ID='twitter_datascience' AIRFLOW_CTX_EXECUTION_DATE='2025-01-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-20T00:00:00+00:00'
+[2025-01-25T00:11:22.866-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-01-25T00:11:22.867-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-01-25T00:11:22.868-0300] {logging_mixin.py:190} INFO - Current task name:twitter_datascience state:running start_date:2025-01-25 03:11:22.490452+00:00
+[2025-01-25T00:11:22.869-0300] {logging_mixin.py:190} INFO - Dag name:TwitterDAG and current dag run status:running
+[2025-01-25T00:11:22.871-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-25T00:11:22.909-0300] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-25T00:11:22.958-0300] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-01-25T00:11:22.959-0300] {logging_mixin.py:190} INFO - Task start:2025-01-25 03:11:22.490452+00:00 end:2025-01-25 03:11:22.957494+00:00 duration:0.467042
+[2025-01-25T00:11:22.960-0300] {logging_mixin.py:190} INFO - Task:<Task(TwitterOperator): twitter_datascience> dag:<DAG: TwitterDAG> dagrun:<DagRun TwitterDAG @ 2025-01-20 00:00:00+00:00: scheduled__2025-01-20T00:00:00+00:00, state:running, queued_at: 2025-01-25 03:10:43.832755+00:00. externally triggered: False>
+[2025-01-25T00:11:22.961-0300] {logging_mixin.py:190} INFO - Failure caused by The conn_id `twitter_default` isn't defined
+[2025-01-25T00:11:22.962-0300] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=TwitterDAG, task_id=twitter_datascience, run_id=scheduled__2025-01-20T00:00:00+00:00, execution_date=20250120T000000, start_date=20250125T031122, end_date=20250125T031122
+[2025-01-25T00:11:23.002-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-25T00:11:23.005-0300] {standard_task_runner.py:124} ERROR - Failed to execute job 8 for task twitter_datascience (The conn_id `twitter_default` isn't defined; 30047)
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-25T00:11:23.069-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-01-25T00:11:23.111-0300] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-25T00:11:23.141-0300] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-01-25T11:39:01.058-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-25T11:39:01.087-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-25T11:39:01.102-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-25T11:39:01.103-0300] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-25T11:39:01.149-0300] {taskinstance.py:2889} INFO - Executing <Task(TwitterOperator): twitter_datascience> on 2025-01-20 00:00:00+00:00
+[2025-01-25T11:39:01.155-0300] {standard_task_runner.py:72} INFO - Started process 4476 to run task
+[2025-01-25T11:39:01.160-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'TwitterDAG', 'twitter_datascience', 'scheduled__2025-01-20T00:00:00+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmpgsrfck3d']
+[2025-01-25T11:39:01.162-0300] {standard_task_runner.py:105} INFO - Job 16: Subtask twitter_datascience
+[2025-01-25T11:39:01.268-0300] {task_command.py:467} INFO - Running <TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [running]> on host ANDERSON.
+[2025-01-25T11:39:01.411-0300] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TwitterDAG' AIRFLOW_CTX_TASK_ID='twitter_datascience' AIRFLOW_CTX_EXECUTION_DATE='2025-01-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-20T00:00:00+00:00'
+[2025-01-25T11:39:01.413-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-01-25T11:39:01.414-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-01-25T11:39:01.415-0300] {logging_mixin.py:190} INFO - Current task name:twitter_datascience state:running start_date:2025-01-25 14:39:01.088765+00:00
+[2025-01-25T11:39:01.415-0300] {logging_mixin.py:190} INFO - Dag name:TwitterDAG and current dag run status:running
+[2025-01-25T11:39:01.416-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-25T11:39:01.455-0300] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-25T11:39:01.496-0300] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-01-25T11:39:01.497-0300] {logging_mixin.py:190} INFO - Task start:2025-01-25 14:39:01.088765+00:00 end:2025-01-25 14:39:01.496000+00:00 duration:0.407235
+[2025-01-25T11:39:01.498-0300] {logging_mixin.py:190} INFO - Task:<Task(TwitterOperator): twitter_datascience> dag:<DAG: TwitterDAG> dagrun:<DagRun TwitterDAG @ 2025-01-20 00:00:00+00:00: scheduled__2025-01-20T00:00:00+00:00, state:running, queued_at: 2025-01-25 14:38:25.792248+00:00. externally triggered: False>
+[2025-01-25T11:39:01.498-0300] {logging_mixin.py:190} INFO - Failure caused by The conn_id `twitter_default` isn't defined
+[2025-01-25T11:39:01.499-0300] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=TwitterDAG, task_id=twitter_datascience, run_id=scheduled__2025-01-20T00:00:00+00:00, execution_date=20250120T000000, start_date=20250125T143901, end_date=20250125T143901
+[2025-01-25T11:39:01.534-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-25T11:39:01.535-0300] {standard_task_runner.py:124} ERROR - Failed to execute job 16 for task twitter_datascience (The conn_id `twitter_default` isn't defined; 4476)
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-25T11:39:01.574-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-01-25T11:39:01.615-0300] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-25T11:39:01.641-0300] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-01-25T11:50:55.207-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-25T11:50:55.238-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-25T11:50:55.255-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-25T11:50:55.256-0300] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-25T11:50:55.304-0300] {taskinstance.py:2889} INFO - Executing <Task(TwitterOperator): twitter_datascience> on 2025-01-20 00:00:00+00:00
+[2025-01-25T11:50:55.309-0300] {standard_task_runner.py:72} INFO - Started process 10452 to run task
+[2025-01-25T11:50:55.315-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'TwitterDAG', 'twitter_datascience', 'scheduled__2025-01-20T00:00:00+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmpef2cz9fa']
+[2025-01-25T11:50:55.318-0300] {standard_task_runner.py:105} INFO - Job 22: Subtask twitter_datascience
+[2025-01-25T11:50:55.427-0300] {task_command.py:467} INFO - Running <TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [running]> on host ANDERSON.
+[2025-01-25T11:50:55.596-0300] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TwitterDAG' AIRFLOW_CTX_TASK_ID='twitter_datascience' AIRFLOW_CTX_EXECUTION_DATE='2025-01-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-20T00:00:00+00:00'
+[2025-01-25T11:50:55.598-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-01-25T11:50:55.599-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-01-25T11:50:55.600-0300] {logging_mixin.py:190} INFO - Current task name:twitter_datascience state:running start_date:2025-01-25 14:50:55.239508+00:00
+[2025-01-25T11:50:55.601-0300] {logging_mixin.py:190} INFO - Dag name:TwitterDAG and current dag run status:running
+[2025-01-25T11:50:55.602-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-25T11:50:55.642-0300] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-25T11:50:55.693-0300] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-01-25T11:50:55.694-0300] {logging_mixin.py:190} INFO - Task start:2025-01-25 14:50:55.239508+00:00 end:2025-01-25 14:50:55.693151+00:00 duration:0.453643
+[2025-01-25T11:50:55.695-0300] {logging_mixin.py:190} INFO - Task:<Task(TwitterOperator): twitter_datascience> dag:<DAG: TwitterDAG> dagrun:<DagRun TwitterDAG @ 2025-01-20 00:00:00+00:00: scheduled__2025-01-20T00:00:00+00:00, state:running, queued_at: 2025-01-25 14:50:20.345679+00:00. externally triggered: False>
+[2025-01-25T11:50:55.696-0300] {logging_mixin.py:190} INFO - Failure caused by The conn_id `twitter_default` isn't defined
+[2025-01-25T11:50:55.697-0300] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=TwitterDAG, task_id=twitter_datascience, run_id=scheduled__2025-01-20T00:00:00+00:00, execution_date=20250120T000000, start_date=20250125T145055, end_date=20250125T145055
+[2025-01-25T11:50:55.739-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-25T11:50:55.740-0300] {standard_task_runner.py:124} ERROR - Failed to execute job 22 for task twitter_datascience (The conn_id `twitter_default` isn't defined; 10452)
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-25T11:50:55.810-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-01-25T11:50:55.846-0300] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-25T11:50:55.872-0300] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-01-25T12:30:23.755-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-25T12:30:23.783-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-25T12:30:23.799-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-25T12:30:23.800-0300] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-25T12:30:23.854-0300] {taskinstance.py:2889} INFO - Executing <Task(TwitterOperator): twitter_datascience> on 2025-01-20 00:00:00+00:00
+[2025-01-25T12:30:23.861-0300] {standard_task_runner.py:72} INFO - Started process 24965 to run task
+[2025-01-25T12:30:23.902-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'TwitterDAG', 'twitter_datascience', 'scheduled__2025-01-20T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmptgo0g2x8']
+[2025-01-25T12:30:23.906-0300] {standard_task_runner.py:105} INFO - Job 27: Subtask twitter_datascience
+[2025-01-25T12:30:24.039-0300] {task_command.py:467} INFO - Running <TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [running]> on host ANDERSON.
+[2025-01-25T12:30:24.211-0300] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TwitterDAG' AIRFLOW_CTX_TASK_ID='twitter_datascience' AIRFLOW_CTX_EXECUTION_DATE='2025-01-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-20T00:00:00+00:00'
+[2025-01-25T12:30:24.213-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-01-25T12:30:24.215-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-01-25T12:30:24.216-0300] {logging_mixin.py:190} INFO - Current task name:twitter_datascience state:running start_date:2025-01-25 15:30:23.784214+00:00
+[2025-01-25T12:30:24.217-0300] {logging_mixin.py:190} INFO - Dag name:TwitterDAG and current dag run status:running
+[2025-01-25T12:30:24.218-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-25T12:30:24.265-0300] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-25T12:30:24.334-0300] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-01-25T12:30:24.335-0300] {logging_mixin.py:190} INFO - Task start:2025-01-25 15:30:23.784214+00:00 end:2025-01-25 15:30:24.333719+00:00 duration:0.549505
+[2025-01-25T12:30:24.336-0300] {logging_mixin.py:190} INFO - Task:<Task(TwitterOperator): twitter_datascience> dag:<DAG: TwitterDAG> dagrun:<DagRun TwitterDAG @ 2025-01-20 00:00:00+00:00: scheduled__2025-01-20T00:00:00+00:00, state:running, queued_at: 2025-01-25 15:29:42.992843+00:00. externally triggered: False>
+[2025-01-25T12:30:24.337-0300] {logging_mixin.py:190} INFO - Failure caused by The conn_id `twitter_default` isn't defined
+[2025-01-25T12:30:24.339-0300] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=TwitterDAG, task_id=twitter_datascience, run_id=scheduled__2025-01-20T00:00:00+00:00, execution_date=20250120T000000, start_date=20250125T153023, end_date=20250125T153024
+[2025-01-25T12:30:24.383-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-25T12:30:24.384-0300] {standard_task_runner.py:124} ERROR - Failed to execute job 27 for task twitter_datascience (The conn_id `twitter_default` isn't defined; 24965)
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-25T12:30:24.440-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-01-25T12:30:24.476-0300] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-25T12:30:24.499-0300] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-01-26T10:27:19.556-0300] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-01-26T10:27:19.584-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-26T10:27:19.600-0300] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [queued]>
+[2025-01-26T10:27:19.601-0300] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-01-26T10:27:19.642-0300] {taskinstance.py:2889} INFO - Executing <Task(TwitterOperator): twitter_datascience> on 2025-01-20 00:00:00+00:00
+[2025-01-26T10:27:19.648-0300] {standard_task_runner.py:72} INFO - Started process 3573 to run task
+[2025-01-26T10:27:19.653-0300] {standard_task_runner.py:104} INFO - Running: ['airflow', 'tasks', 'run', 'TwitterDAG', 'twitter_datascience', 'scheduled__2025-01-20T00:00:00+00:00', '--job-id', '34', '--raw', '--subdir', 'DAGS_FOLDER/twitter_dag.py', '--cfg-path', '/tmp/tmpnpsrgd83']
+[2025-01-26T10:27:19.655-0300] {standard_task_runner.py:105} INFO - Job 34: Subtask twitter_datascience
+[2025-01-26T10:27:19.772-0300] {task_command.py:467} INFO - Running <TaskInstance: TwitterDAG.twitter_datascience scheduled__2025-01-20T00:00:00+00:00 [running]> on host ANDERSON.
+[2025-01-26T10:27:20.026-0300] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='TwitterDAG' AIRFLOW_CTX_TASK_ID='twitter_datascience' AIRFLOW_CTX_EXECUTION_DATE='2025-01-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-01-20T00:00:00+00:00'
+[2025-01-26T10:27:20.029-0300] {logging_mixin.py:190} INFO - Task instance is in running state
+[2025-01-26T10:27:20.030-0300] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2025-01-26T10:27:20.031-0300] {logging_mixin.py:190} INFO - Current task name:twitter_datascience state:running start_date:2025-01-26 13:27:19.585174+00:00
+[2025-01-26T10:27:20.036-0300] {logging_mixin.py:190} INFO - Dag name:TwitterDAG and current dag run status:running
+[2025-01-26T10:27:20.038-0300] {taskinstance.py:731} INFO - ::endgroup::
+[2025-01-26T10:27:20.110-0300] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-26T10:27:20.164-0300] {logging_mixin.py:190} INFO - Task instance in failure state
+[2025-01-26T10:27:20.165-0300] {logging_mixin.py:190} INFO - Task start:2025-01-26 13:27:19.585174+00:00 end:2025-01-26 13:27:20.164395+00:00 duration:0.579221
+[2025-01-26T10:27:20.166-0300] {logging_mixin.py:190} INFO - Task:<Task(TwitterOperator): twitter_datascience> dag:<DAG: TwitterDAG> dagrun:<DagRun TwitterDAG @ 2025-01-20 00:00:00+00:00: scheduled__2025-01-20T00:00:00+00:00, state:running, queued_at: 2025-01-26 13:26:40.257804+00:00. externally triggered: False>
+[2025-01-26T10:27:20.167-0300] {logging_mixin.py:190} INFO - Failure caused by The conn_id `twitter_default` isn't defined
+[2025-01-26T10:27:20.168-0300] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=TwitterDAG, task_id=twitter_datascience, run_id=scheduled__2025-01-20T00:00:00+00:00, execution_date=20250120T000000, start_date=20250126T132719, end_date=20250126T132720
+[2025-01-26T10:27:20.219-0300] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-01-26T10:27:20.221-0300] {standard_task_runner.py:124} ERROR - Failed to execute job 34 for task twitter_datascience (The conn_id `twitter_default` isn't defined; 3573)
+Traceback (most recent call last):
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/cli.py", line 116, in wrapper
+    return f(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3005, in _run_raw_task
+    return _run_raw_task(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3159, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 3183, in _execute_task
+    return _execute_task(self, context, task_orig)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/operators/twitter_operator.py", line 33, in execute
+    for pg in TwitterHook(end_time, start_time, query).run():
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/airflow_pipeline/hook/twitter_hook.py", line 58, in run
+    session = self.get_conn()
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/providers/http/hooks/http.py", line 68, in get_conn
+    conn = self.get_connection(self.http_conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/mnt/c/Users/ander/Desktop/airflow-spark/airflow-spark/curso2/ambientX/lib/python3.9/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `twitter_default` isn't defined
+[2025-01-26T10:27:20.350-0300] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2025-01-26T10:27:20.409-0300] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-01-26T10:27:20.430-0300] {local_task_job_runner.py:245} INFO - ::endgroup::
